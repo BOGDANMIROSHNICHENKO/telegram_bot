@@ -11,7 +11,7 @@ bot = telebot.TeleBot(token)
 @bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_message(message.chat.id, reply_markup=markup,
-                     text='Привет,это бот - фрилансбиржа ,тут ты сможешь разместить свой заказ или заработать.Для продолжения нажми на кнопку ниже.')
+                     text='Привет,это бот - фрилансбиржа ,тут ты сможешь разместить свой заказ или заработать. Для продолжения нажми на кнопку ниже.')
 
 
 markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
